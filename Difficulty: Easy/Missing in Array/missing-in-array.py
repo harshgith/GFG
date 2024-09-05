@@ -1,14 +1,12 @@
 #User function Template for python3
 class Solution:
-    
-    # Note that the size of the array is n-1
     def missingNumber(self, n, arr):
-        sorted_arr = sorted(arr)
-        for i in range(n-1):
-            if sorted_arr[i] != i+1:
-                return i+1
-            
-        return n
+        # code here
+        check=[i+1 for i in range(n)]
+        sum_arr=sum(arr)
+        sum_all=sum(check)
+        return (sum_all - sum_arr)
+
 
 #{ 
  # Driver Code Starts
